@@ -132,7 +132,7 @@ notebook==6.2.0
     # via widgetsnbextension
 numexpr==2.7.2
     # via scikit-survival
-numpy==1.19.5
+numpy==1.20.1
     # via
     #   -r requirements.in
     #   cvxpy
