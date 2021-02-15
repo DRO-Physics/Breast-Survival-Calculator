@@ -65,7 +65,8 @@ class Survival_Calculator:
              Invasion, size, nodes]]) ## Full Variables
         x = np.array([[age, T1, T2, T3, T4, N1, N2, N3, M1, grade2, grade3, ER, PR, Her2,
              Invasion]])
-        self.results = self._CalculateSurvivalFunction_pysurvival(x)
+        self.results_OS = self._CalculateSurvivalFunction_pysurvival(x, 'OS_Final_model')
+        self.results_CSS = self._CalculateSurvivalFunction_pysurvival(x, 'CSS_Final_model')
 
     def _CalculateSurvivalFunction_sksurv(self, x):
         ## Read in models
@@ -88,10 +89,10 @@ class Survival_Calculator:
         self._PlotFigure(s_arr_mean, s_arr_std, x, time)
         return {'time': time, 's_mean':s_arr_mean, 's_std':s_arr_std}
 
-    def _CalculateSurvivalFunction_pysurvival(self, x):
+    def _CalculateSurvivalFunction_pysurvival(self, x, folder):
         ## Read in models
         startTime = time.time()
-        models = [load_model('./OS_Final_model/DeepSurv' + str(k+1) + '.zip') for k in range(50)]
+        models = [load_model('./' + folder + '/DeepSurv' + str(k+1) + '.zip') for k in range(50)]
 
         ## Calculate Survival functions
         t = np.linspace(12,120, 240)
