@@ -28,8 +28,6 @@ cvxpy==1.1.10
     # via scikit-survival
 cycler==0.10.0
     # via matplotlib
-cython==0.29.21
-    # via -r requirements.in
 dataclasses==0.6
     # via
     #   anyio
@@ -249,7 +247,7 @@ sklearn==0.0
     # via pysurvival
 sniffio==1.2.0
     # via anyio
-terminado==0.9.2
+#terminado==0.9.2
     # via
     #   jupyter-server
     #   notebook

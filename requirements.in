@@ -8,3 +8,4 @@ IPython
 ipywidgets
 voila
 scikit-survival
+cython
