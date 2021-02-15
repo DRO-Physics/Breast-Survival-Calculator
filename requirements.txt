@@ -18,7 +18,7 @@ cffi==1.14.5
     # via argon2-cffi
 cycler==0.10.0
     # via matplotlib
-dataclasses==0.8
+dataclasses==0.6
     # via torch
 decorator==4.4.2
     # via
