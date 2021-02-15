@@ -1,0 +1,8 @@
+# requirements.in
+numpy
+pandas
+matplotlib
+scipy
+pysurvival
+IPython
+ipywidgets
