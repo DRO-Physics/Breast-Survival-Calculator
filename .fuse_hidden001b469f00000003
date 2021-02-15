@@ -22,10 +22,6 @@ cffi==1.14.5
     # via argon2-cffi
 contextvars==2.4
     # via sniffio
-cvxopt==1.2.5
-    # via scikit-survival
-cvxpy==1.1.10
-    # via scikit-survival
 cycler==0.10.0
     # via matplotlib
 dataclasses==0.6
@@ -38,8 +34,6 @@ decorator==4.4.2
     #   traitlets
 defusedxml==0.6.0
     # via nbconvert
-ecos==2.0.7.post1
-    # via cvxpy
 entrypoints==0.3
     # via nbconvert
 idna==3.1
@@ -73,9 +67,7 @@ jinja2==2.11.3
     #   nbconvert
     #   notebook
 joblib==1.0.1
-    # via
-    #   scikit-learn
-    #   scikit-survival
+    # via scikit-learn
 jsonschema==3.2.0
     # via nbformat
 jupyter-client==6.1.11
@@ -128,36 +120,22 @@ nest-asyncio==1.5.1
     # via nbclient
 notebook==6.2.0
     # via widgetsnbextension
-numexpr==2.7.2
-    # via scikit-survival
 numpy==1.19.5
     # via
     #   -r requirements.in
-    #   cvxpy
-    #   ecos
     #   matplotlib
-    #   numexpr
-    #   osqp
     #   pandas
     #   pyarrow
     #   pysurvival
-    #   qdldl
     #   scikit-learn
-    #   scikit-survival
     #   scipy
-    #   scs
     #   torch
-osqp==0.6.2.post0
-    # via
-    #   cvxpy
-    #   scikit-survival
 packaging==20.9
     # via bleach
 pandas==1.1.5
     # via
     #   -r requirements.in
     #   pysurvival
-    #   scikit-survival
 pandocfilters==1.4.3
     # via nbconvert
 parso==0.8.1
@@ -209,28 +187,15 @@ pyzmq==22.0.3
     #   jupyter-client
     #   jupyter-server
     #   notebook
-qdldl==0.1.5.post0
-    # via osqp
-scikit-learn==0.23.2
+scikit-learn==0.24.1
     # via
     #   pysurvival
-    #   scikit-survival
     #   sklearn
-scikit-survival==0.14.0
-    # via -r requirements.in
 scipy==1.5.4
     # via
     #   -r requirements.in
-    #   cvxpy
-    #   ecos
-    #   osqp
     #   pysurvival
-    #   qdldl
     #   scikit-learn
-    #   scikit-survival
-    #   scs
-scs==2.1.2
-    # via cvxpy
 send2trash==1.5.0
     # via
     #   jupyter-server
