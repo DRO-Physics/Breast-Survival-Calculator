@@ -293,6 +293,7 @@ widgetsnbextension==3.5.1
     # via ipywidgets
 zipp==3.4.0
     # via importlib-metadata
+ipympl==0.6.3
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip

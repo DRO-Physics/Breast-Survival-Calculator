@@ -9,3 +9,4 @@ ipywidgets
 voila
 scikit-survival
 cython
+ipympl

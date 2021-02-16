@@ -10,7 +10,7 @@ def ErrorMessage(msg):
     return msg
 
 class Survival_Calculator:
-    def __init__(self, age, T, N, M1, grade, ER, PR, Her2, Invasion, size, nodes):
+    def __init__(self, age, T, N, M1, grade, ER, PR, Her2, Invasion, size, nodes, option):
         self.params = [age, T, N, M1, grade, ER, PR, Her2, Invasion, size, nodes]
         size_mean  = 2.508002588438309
         size_std   = 1.9174335908941977
@@ -64,8 +64,11 @@ class Survival_Calculator:
              Invasion, size, nodes]]) ## Full Variables
         x = np.array([[age, T1, T2, T3, T4, N1, N2, N3, M1, grade2, grade3, ER, PR, Her2,
              Invasion]])
-        self.results_OS = self._CalculateSurvivalFunction_pysurvival(x, 'OS_Final_model')
-        self.results_CSS = self._CalculateSurvivalFunction_pysurvival(x, 'CSS_Final_model')
+        if option == 'OS':
+            self.results = self._CalculateSurvivalFunction_pysurvival(x, 'OS_Final_model')
+        elif option == 'CSS':
+            self.results = self._CalculateSurvivalFunction_pysurvival(x, 'CSS_Final_model')
+
 
     def _CalculateSurvivalFunction_sksurv(self, x):
         ## Read in models
