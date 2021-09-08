@@ -9,9 +9,7 @@ anyio==2.1.0
 argon2-cffi==20.1.0
     # via notebook
 async-generator==1.10
-    # via
-    #   anyio
-    #   nbclient
+    # via nbclient
 attrs==20.3.0
     # via jsonschema
 backcall==0.2.0
@@ -20,8 +18,6 @@ bleach==3.3.0
     # via nbconvert
 cffi==1.14.5
     # via argon2-cffi
-contextvars==2.4
-    # via sniffio
 cvxopt==1.2.5
     # via scikit-survival
 cvxpy==1.1.10
@@ -30,10 +26,6 @@ cycler==0.10.0
     # via matplotlib
 cython==0.29.21
     # via -r requirements.in
-dataclasses==0.6
-    # via
-    #   anyio
-    #   torch
 decorator==4.4.2
     # via
     #   ipython
@@ -46,27 +38,28 @@ entrypoints==0.3
     # via nbconvert
 idna==3.1
     # via anyio
-immutables==0.15
-    # via contextvars
-importlib-metadata==3.4.0
-    # via jsonschema
 ipykernel==5.4.3
     # via
+    #   ipympl
     #   ipywidgets
     #   notebook
+ipympl==0.6.3
+    # via -r requirements.in
+ipython==7.16.1
+    # via
+    #   -r requirements.in
+    #   ipykernel
+    #   ipywidgets
 ipython-genutils==0.2.0
     # via
     #   jupyter-server
     #   nbformat
     #   notebook
     #   traitlets
-ipython==7.16.1
+ipywidgets==7.6.3
     # via
     #   -r requirements.in
-    #   ipykernel
-    #   ipywidgets
-ipywidgets==7.6.3
-    # via -r requirements.in
+    #   ipympl
 jedi==0.18.0
     # via ipython
 jinja2==2.11.3
@@ -107,6 +100,7 @@ markupsafe==1.1.1
 matplotlib==3.3.4
     # via
     #   -r requirements.in
+    #   ipympl
     #   pysurvival
 mistune==0.8.4
     # via nbconvert
@@ -168,7 +162,7 @@ pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
-pillow==8.1.0
+pillow==8.3.2
     # via matplotlib
 progressbar==2.5
     # via pysurvival
@@ -249,7 +243,7 @@ sklearn==0.0
     # via pysurvival
 sniffio==1.2.0
     # via anyio
-#terminado==0.9.2
+terminado==0.12.1
     # via
     #   jupyter-server
     #   notebook
@@ -279,10 +273,7 @@ traitlets==4.3.3
     #   nbformat
     #   notebook
 typing-extensions==3.7.4.3
-    # via
-    #   anyio
-    #   importlib-metadata
-    #   torch
+    # via torch
 voila==0.2.6
     # via -r requirements.in
 wcwidth==0.2.5
@@ -291,9 +282,6 @@ webencodings==0.5.1
     # via bleach
 widgetsnbextension==3.5.1
     # via ipywidgets
-zipp==3.4.0
-    # via importlib-metadata
-ipympl==0.6.3
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
